@@ -1,0 +1,9 @@
+<div class="viewHome" ng-controller="control1" ng-init="ninjaName=''" ng-init="ninjaPrice=''">
+  <main>
+    <div class="ninjas">
+      <h3 ng-repeat="ninja in ninjas | filter:search" ng-show="ninja.available">{{ ninja.name }} -
+        {{ ninja.price | currency }}
+      </h3>
+    </div>
+  </main>
+</div>
